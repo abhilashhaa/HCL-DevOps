@@ -1,16 +1,14 @@
 library('piper-library-os')
 
-
-gctsCreateRepository(
-  
+stages:
+  Prepare System:
+  (
+    )
+Clone Repositories:
+  (
+    )
+ATC
+(
   )
 
-gctsCloneRepository( 
-
-  
-  )
-
-gctsDeploy script: this(
-  
-  )
 
