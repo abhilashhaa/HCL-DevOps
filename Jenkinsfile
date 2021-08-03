@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('gctsCreateRepository') { 
             steps { 
-             gctsCreateRepository(
+             gctsCreateRepository
   script: this,
   host: 'https://hcluks4hana.hcldigilabs.com:8001',
   client: '000',
@@ -12,19 +12,19 @@ pipeline {
   remoteRepositoryURL: 'https://github.com/abhilashhaa/HCL_Githup',
   role: 'SOURCE',
   vSID: 'FEF'
-  )
+  
                 
             }
         }
         stage('gctsCloneRepository') { 
             steps {
-               gctsCloneRepository(
+               gctsCloneRepository
   script: this,
   host: 'https://hcluks4hana.hcldigilabs.com:8001',
   client: '000',
   abapCredentialsId: 'AbapSystem',
   repository: 'HCL_Github'
-)
+
             }
         }
         stage('gctsDeploy') { 
@@ -42,7 +42,7 @@ pipeline {
   scope: 'scope',
   rollback: false,
   configuration: [dummyConfig: 'dummyval']
-)
+
             }
         }
     }
