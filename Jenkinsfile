@@ -1,18 +1,18 @@
 pipeline {
     agent any 
     stages {
-        stage('CreateRepository') { 
+        stage('gctsCreateRepository') { 
             steps { 
               gctsCreateRepository script: this
                 
             }
         }
-        stage('CloneRepository') { 
+        stage('gctsCloneRepository') { 
             steps {
                 gctsCloneRepository script: this
             }
         }
-        stage('Deploy') { 
+        stage('gctsDeploy') { 
             steps {
                 gctsDeploy script: this
             }
