@@ -8,8 +8,8 @@ pipeline {
   host: 'https://hcluks4hana.hcldigilabs.com:8001',
   client: '000',
   abapCredentialsId: 'AbapSystem',
-  repository: 'myrepo',
-  remoteRepositoryURL: 'https://github.com/abhilashhaa/gCTS',
+  repository: 'HCL_Github',
+  remoteRepositoryURL: 'https://github.com/abhilashhaa/HCL_Githup',
   role: 'SOURCE',
   vSID: 'FEF'
   )
@@ -23,7 +23,7 @@ pipeline {
   host: 'https://hcluks4hana.hcldigilabs.com:8001',
   client: '000',
   abapCredentialsId: 'AbapSystem',
-  repository: 'myrepo'
+  repository: 'HCL_Github'
 )
             }
         }
@@ -34,7 +34,7 @@ pipeline {
   client: '000',
   abapCredentialsId: 'AbapSystem',
   repository: 'myrepo',
-  remoteRepositoryURL: "https://github.com/abhilashhaa/gCTS",
+  remoteRepositoryURL: "https://github.com/abhilashhaa/HCL_Githup",
   role: 'SOURCE',
   vSID: 'FEF',
   branch: 'master',
