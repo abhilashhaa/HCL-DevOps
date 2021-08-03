@@ -9,7 +9,7 @@ pipeline {
   client: '000',
   abapCredentialsId: 'AbapSystem',
   repository: 'myrepo',
-  remoteRepositoryURL: 'https://github.com/abhilashhaa/myrepo',
+  remoteRepositoryURL: 'https://github.com/abhilashhaa/gCTS',
   role: 'SOURCE',
   vSID: 'FEF'
   )
@@ -34,7 +34,7 @@ pipeline {
   client: '000',
   abapCredentialsId: 'AbapSystem',
   repository: 'myrepo',
-  remoteRepositoryURL: "https://hcluks4hana.hcldigilabs.com:8001/sap/bc/cts_abapvcs",
+  remoteRepositoryURL: "https://github.com/abhilashhaa/gCTS",
   role: 'SOURCE',
   vSID: 'FEF',
   branch: 'master',
