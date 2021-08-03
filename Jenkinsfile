@@ -3,18 +3,18 @@ pipeline {
     stages {
         stage('CreateRepository') { 
             steps { 
-              gctsCreateRepository
+              gctsCreateRepository script: this
                 
             }
         }
         stage('CloneRepository') { 
             steps {
-                gctsCloneRepository
+                gctsCloneRepository script: this
             }
         }
         stage('Deploy') { 
             steps {
-                // 
+                gctsDeploy script: this
             }
         }
     }
