@@ -1,6 +1,7 @@
 @Library('piper-library-os') _
 
-
+node()
+{
 stage('RunUnitTest') 
     gctsExecuteABAPUnitTests(
       script: this,
@@ -19,4 +20,4 @@ stage('RollbackCommit')
       repository: "OpenSAP"
   )
 
-
+}
