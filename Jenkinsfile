@@ -14,7 +14,7 @@ stage('RunUnitTest')
 stage('RollbackCommit')
     {
         when{ 
-            expression{<whatever>=='FAILURE')
+            expression{<whatever>=='FAILURE'}
                       }
             steps{  
                 script {
