@@ -13,12 +13,13 @@ stage('RunUnitTest')
 
 stage('RollbackCommit')
     {
-        When{ 
+        when{ 
             expression{<whatever>=='FAILURE')
                       }
             steps{  
                 script {
-                gctsRollbackCommit(
+                gctsRollback(
+                    
                 script: this,
                 host: "https://hcluks4hana.hcldigilabs.com:8001/",
                 client: "200",
