@@ -26,7 +26,16 @@ stage('RunUnitTest')
 }
 	}
             
-     
+     stage('DeployCommit') 
+    gctsDeploy(
+  script: this,
+  host: 'https://hclutl1909.hcldigilabs.com:8001',
+  abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+  repository: 'PASS',
+  remoteRepositoryURL: "https://github.com/abhilashhaa/OpenSAPDemo.git",
+  role: 'TARGET',
+  vSID: 'FEF',
+  rollback: 'false',
    
 
 }
