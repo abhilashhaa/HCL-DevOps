@@ -1,5 +1,10 @@
 @Library('piper-library-os') _
 
+def info(script,msg){
+        LOGGER.info("${msg}")
+        script.echo "[INFO] ${msg}"
+    }
+
 node()
 {
 stage('RunUnitTest') 
