@@ -1,9 +1,5 @@
 @Library('piper-library-os') _
 
-def info(script,msg){
-        LOGGER.info("${msg}")
-        script.echo "[INFO] ${msg}"
-    }
 
 node()
 {
@@ -28,7 +24,7 @@ stage('RunUnitTest')
         abapCredentialsId: 'AbapSystem',
         repository: "OpenSAP"
    )
-		 out.info(this,"Some Information")
+		 println "Hello Jenkins"
 }
 	}
             
