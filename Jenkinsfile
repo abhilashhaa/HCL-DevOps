@@ -23,7 +23,7 @@ stage('RunUnitTest')
         abapCredentialsId: 'AbapSystem',
         repository: "OpenSAP"
    )
-		 out.info("Some Information")
+		 out.info(this,"Some Information")
 }
 	}
             
