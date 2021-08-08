@@ -12,12 +12,7 @@ stage('RunUnitTest')
 )
 
 stage('RollbackCommit')
-    {
-        when{ 
-            expression{<whatever>=='FAILURE'}
-                      }
-            steps{  
-                script {
+    
                 gctsRollback(
                     
                 script: this,
@@ -26,7 +21,7 @@ stage('RollbackCommit')
                 abapCredentialsId: 'AbapSystem',
                 repository: "OpenSAP"
   )
-            }
-            }
+            
+            
 
 }
