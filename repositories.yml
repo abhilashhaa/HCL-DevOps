@@ -1,0 +1,3 @@
+repositories:
+- name: '/HCL-DevOps-V1'
+  branch: 'master'
