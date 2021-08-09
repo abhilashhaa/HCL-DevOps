@@ -27,6 +27,29 @@ stage('RunUnitTest')
 		 println "Hello Jenkins"
 }
 	}
+	
+	stage('CreateRepository')
+  gctsCreateRepository(
+  script: this,
+  host: 'https://hclutl1909.hcldigilabs.com:8001',
+  client: '200',
+  abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+  repository: 'HCL-DevOps-V1',
+  remoteRepositoryURL: 'https://github.com/abhilashhaa/OpenSAPDemo.git',
+  role: 'TARGET',
+  vSID: 'FEF'
+  )
+  
+  
+  stage('CloneRepository')
+  
+  gctsCloneRepository(
+  script: this,
+  host: 'https://hclutl1909.hcldigilabs.com:8001',
+  client: '200',
+  abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+  repository: 'HCL-DevOps-V1'
+)
             
      stage('DeployCommit') 
     gctsDeploy(
