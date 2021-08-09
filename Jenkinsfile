@@ -4,6 +4,7 @@
 
 node()
 {
+stage('Prepare')
 	      
 stage('RunUnitTest') 
     gctsExecuteABAPUnitTests(
